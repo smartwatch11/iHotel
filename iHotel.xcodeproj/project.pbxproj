@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		581FFF102B33156000435D88 /* iHotelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FFF0F2B33156000435D88 /* iHotelApp.swift */; };
+		581FFF122B33156000435D88 /* SuccessOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FFF112B33156000435D88 /* SuccessOrderView.swift */; };
+		581FFF142B33156100435D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581FFF132B33156100435D88 /* Assets.xcassets */; };
+		581FFF172B33156100435D88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581FFF162B33156100435D88 /* Preview Assets.xcassets */; };
+		581FFF222B333FF300435D88 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FFF212B333FF300435D88 /* MainCoordinator.swift */; };
+		581FFF242B3347E000435D88 /* HotelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FFF232B3347E000435D88 /* HotelModel.swift */; };
+		581FFF262B33491900435D88 /* RoomsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FFF252B33491900435D88 /* RoomsModel.swift */; };
+		581FFF282B3349F200435D88 /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FFF272B3349F200435D88 /* BookingModel.swift */; };
+		581FFF2B2B3369EF00435D88 /* APIFetchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FFF2A2B3369EF00435D88 /* APIFetchHandler.swift */; };
+		5862E74A2B3443D90097FA58 /* HotelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862E7492B3443D90097FA58 /* HotelView.swift */; };
+		5862E74C2B3443F50097FA58 /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862E74B2B3443F50097FA58 /* RoomsView.swift */; };
+		5862E74E2B3444150097FA58 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862E74D2B3444150097FA58 /* BookingView.swift */; };
+		5862E7502B3444C50097FA58 /* MainCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862E74F2B3444C50097FA58 /* MainCoordinatorView.swift */; };
+		5862E7522B3464A80097FA58 /* HotelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862E7512B3464A80097FA58 /* HotelViewModel.swift */; };
+		5862E7542B3464EB0097FA58 /* RoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862E7532B3464EB0097FA58 /* RoomsViewModel.swift */; };
+		5862E7562B3465040097FA58 /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862E7552B3465040097FA58 /* BookingViewModel.swift */; };
+		58855A302B398A6700F2F1F9 /* HotelCommonInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A2F2B398A6700F2F1F9 /* HotelCommonInfoView.swift */; };
+		58855A322B398BC400F2F1F9 /* HotelMoreInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A312B398BC400F2F1F9 /* HotelMoreInfoView.swift */; };
+		58855A382B39B63200F2F1F9 /* HotelTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A372B39B63200F2F1F9 /* HotelTagsView.swift */; };
+		58855A422B39EFE500F2F1F9 /* SF-Pro-Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58855A3F2B39EFE400F2F1F9 /* SF-Pro-Display-Medium.ttf */; };
+		58855A432B39EFE500F2F1F9 /* SF-Pro-Display-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58855A402B39EFE400F2F1F9 /* SF-Pro-Display-Semibold.ttf */; };
+		58855A442B39EFE500F2F1F9 /* SF-Pro-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58855A412B39EFE500F2F1F9 /* SF-Pro-Display-Regular.ttf */; };
+		58855A462B39F5E600F2F1F9 /* RoomTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A452B39F5E600F2F1F9 /* RoomTagsView.swift */; };
+		58855A482B3A123300F2F1F9 /* BookingMainDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A472B3A123300F2F1F9 /* BookingMainDataView.swift */; };
+		58855A4A2B3A12A000F2F1F9 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A492B3A12A000F2F1F9 /* PhoneView.swift */; };
+		58855A4C2B3A12E900F2F1F9 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A4B2B3A12E900F2F1F9 /* EmailView.swift */; };
+		58855A4E2B3A134700F2F1F9 /* UserGroupFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A4D2B3A134700F2F1F9 /* UserGroupFieldsView.swift */; };
+		58855A502B3A138200F2F1F9 /* UserTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A4F2B3A138200F2F1F9 /* UserTextFieldView.swift */; };
+		58855A522B3A13A000F2F1F9 /* UserDatePickerForTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A512B3A13A000F2F1F9 /* UserDatePickerForTextFieldView.swift */; };
+		58855A542B3A13C600F2F1F9 /* UserDateFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A532B3A13C600F2F1F9 /* UserDateFieldView.swift */; };
+		58855A562B3A13EC00F2F1F9 /* TotalPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855A552B3A13EC00F2F1F9 /* TotalPriceView.swift */; };
+		85F42C5873BEF4B7724AAC64 /* Pods_iHotel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0B7BAAFD15D43DB1735ADD /* Pods_iHotel.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		581FFF0C2B33156000435D88 /* iHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		581FFF0F2B33156000435D88 /* iHotelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iHotelApp.swift; sourceTree = "<group>"; };
+		581FFF112B33156000435D88 /* SuccessOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessOrderView.swift; sourceTree = "<group>"; };
+		581FFF132B33156100435D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		581FFF162B33156100435D88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		581FFF212B333FF300435D88 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		581FFF232B3347E000435D88 /* HotelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelModel.swift; sourceTree = "<group>"; };
+		581FFF252B33491900435D88 /* RoomsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsModel.swift; sourceTree = "<group>"; };
+		581FFF272B3349F200435D88 /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
+		581FFF2A2B3369EF00435D88 /* APIFetchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetchHandler.swift; sourceTree = "<group>"; };
+		5862E7492B3443D90097FA58 /* HotelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelView.swift; sourceTree = "<group>"; };
+		5862E74B2B3443F50097FA58 /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
+		5862E74D2B3444150097FA58 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		5862E74F2B3444C50097FA58 /* MainCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorView.swift; sourceTree = "<group>"; };
+		5862E7512B3464A80097FA58 /* HotelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewModel.swift; sourceTree = "<group>"; };
+		5862E7532B3464EB0097FA58 /* RoomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewModel.swift; sourceTree = "<group>"; };
+		5862E7552B3465040097FA58 /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
+		58855A2F2B398A6700F2F1F9 /* HotelCommonInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCommonInfoView.swift; sourceTree = "<group>"; };
+		58855A312B398BC400F2F1F9 /* HotelMoreInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelMoreInfoView.swift; sourceTree = "<group>"; };
+		58855A372B39B63200F2F1F9 /* HotelTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTagsView.swift; sourceTree = "<group>"; };
+		58855A3B2B39ED1C00F2F1F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		58855A3F2B39EFE400F2F1F9 /* SF-Pro-Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.ttf"; sourceTree = "<group>"; };
+		58855A402B39EFE400F2F1F9 /* SF-Pro-Display-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.ttf"; sourceTree = "<group>"; };
+		58855A412B39EFE500F2F1F9 /* SF-Pro-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.ttf"; sourceTree = "<group>"; };
+		58855A452B39F5E600F2F1F9 /* RoomTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTagsView.swift; sourceTree = "<group>"; };
+		58855A472B3A123300F2F1F9 /* BookingMainDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingMainDataView.swift; sourceTree = "<group>"; };
+		58855A492B3A12A000F2F1F9 /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
+		58855A4B2B3A12E900F2F1F9 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		58855A4D2B3A134700F2F1F9 /* UserGroupFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGroupFieldsView.swift; sourceTree = "<group>"; };
+		58855A4F2B3A138200F2F1F9 /* UserTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextFieldView.swift; sourceTree = "<group>"; };
+		58855A512B3A13A000F2F1F9 /* UserDatePickerForTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDatePickerForTextFieldView.swift; sourceTree = "<group>"; };
+		58855A532B3A13C600F2F1F9 /* UserDateFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDateFieldView.swift; sourceTree = "<group>"; };
+		58855A552B3A13EC00F2F1F9 /* TotalPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPriceView.swift; sourceTree = "<group>"; };
+		81AA1FFD51AD474678A6E721 /* Pods-iHotel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHotel.debug.xcconfig"; path = "Target Support Files/Pods-iHotel/Pods-iHotel.debug.xcconfig"; sourceTree = "<group>"; };
+		86E5C306997470D6A6C394C6 /* Pods-iHotel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHotel.release.xcconfig"; path = "Target Support Files/Pods-iHotel/Pods-iHotel.release.xcconfig"; sourceTree = "<group>"; };
+		EF0B7BAAFD15D43DB1735ADD /* Pods_iHotel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHotel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		581FFF092B33156000435D88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F42C5873BEF4B7724AAC64 /* Pods_iHotel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		232D3C5E6F26D02AD2A7FDB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81AA1FFD51AD474678A6E721 /* Pods-iHotel.debug.xcconfig */,
+				86E5C306997470D6A6C394C6 /* Pods-iHotel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		581FFF032B33156000435D88 = {
+			isa = PBXGroup;
+			children = (
+				581FFF0E2B33156000435D88 /* iHotel */,
+				581FFF0D2B33156000435D88 /* Products */,
+				232D3C5E6F26D02AD2A7FDB5 /* Pods */,
+				84D7DB7432C0131EC1517ADB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		581FFF0D2B33156000435D88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				581FFF0C2B33156000435D88 /* iHotel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		581FFF0E2B33156000435D88 /* iHotel */ = {
+			isa = PBXGroup;
+			children = (
+				58855A3B2B39ED1C00F2F1F9 /* Info.plist */,
+				581FFF202B333FA900435D88 /* Coordinators */,
+				581FFF1D2B33171100435D88 /* Models */,
+				581FFF1F2B33172D00435D88 /* Views */,
+				581FFF1E2B33171D00435D88 /* ViewModels */,
+				581FFF292B3369C800435D88 /* Services */,
+				58855A332B398E1900F2F1F9 /* Fonts */,
+				581FFF152B33156100435D88 /* Preview Content */,
+				581FFF0F2B33156000435D88 /* iHotelApp.swift */,
+				581FFF132B33156100435D88 /* Assets.xcassets */,
+			);
+			path = iHotel;
+			sourceTree = "<group>";
+		};
+		581FFF152B33156100435D88 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				581FFF162B33156100435D88 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		581FFF1D2B33171100435D88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				581FFF232B3347E000435D88 /* HotelModel.swift */,
+				581FFF252B33491900435D88 /* RoomsModel.swift */,
+				581FFF272B3349F200435D88 /* BookingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		581FFF1E2B33171D00435D88 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5862E7512B3464A80097FA58 /* HotelViewModel.swift */,
+				5862E7532B3464EB0097FA58 /* RoomsViewModel.swift */,
+				5862E7552B3465040097FA58 /* BookingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		581FFF1F2B33172D00435D88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				585B3DC12B3589A1007DFBA2 /* HotelViews */,
+				585B3DC22B3589AA007DFBA2 /* RoomsViews */,
+				585B3DC32B3589B2007DFBA2 /* BookingViews */,
+				581FFF112B33156000435D88 /* SuccessOrderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		581FFF202B333FA900435D88 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				581FFF212B333FF300435D88 /* MainCoordinator.swift */,
+				5862E74F2B3444C50097FA58 /* MainCoordinatorView.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		581FFF292B3369C800435D88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				581FFF2A2B3369EF00435D88 /* APIFetchHandler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		585B3DC12B3589A1007DFBA2 /* HotelViews */ = {
+			isa = PBXGroup;
+			children = (
+				5862E7492B3443D90097FA58 /* HotelView.swift */,
+				58855A2F2B398A6700F2F1F9 /* HotelCommonInfoView.swift */,
+				58855A312B398BC400F2F1F9 /* HotelMoreInfoView.swift */,
+				58855A372B39B63200F2F1F9 /* HotelTagsView.swift */,
+			);
+			path = HotelViews;
+			sourceTree = "<group>";
+		};
+		585B3DC22B3589AA007DFBA2 /* RoomsViews */ = {
+			isa = PBXGroup;
+			children = (
+				5862E74B2B3443F50097FA58 /* RoomsView.swift */,
+				58855A452B39F5E600F2F1F9 /* RoomTagsView.swift */,
+			);
+			path = RoomsViews;
+			sourceTree = "<group>";
+		};
+		585B3DC32B3589B2007DFBA2 /* BookingViews */ = {
+			isa = PBXGroup;
+			children = (
+				5862E74D2B3444150097FA58 /* BookingView.swift */,
+				58855A472B3A123300F2F1F9 /* BookingMainDataView.swift */,
+				58855A492B3A12A000F2F1F9 /* PhoneView.swift */,
+				58855A4B2B3A12E900F2F1F9 /* EmailView.swift */,
+				58855A4D2B3A134700F2F1F9 /* UserGroupFieldsView.swift */,
+				58855A4F2B3A138200F2F1F9 /* UserTextFieldView.swift */,
+				58855A512B3A13A000F2F1F9 /* UserDatePickerForTextFieldView.swift */,
+				58855A532B3A13C600F2F1F9 /* UserDateFieldView.swift */,
+				58855A552B3A13EC00F2F1F9 /* TotalPriceView.swift */,
+			);
+			path = BookingViews;
+			sourceTree = "<group>";
+		};
+		58855A332B398E1900F2F1F9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				58855A3F2B39EFE400F2F1F9 /* SF-Pro-Display-Medium.ttf */,
+				58855A412B39EFE500F2F1F9 /* SF-Pro-Display-Regular.ttf */,
+				58855A402B39EFE400F2F1F9 /* SF-Pro-Display-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84D7DB7432C0131EC1517ADB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF0B7BAAFD15D43DB1735ADD /* Pods_iHotel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		581FFF0B2B33156000435D88 /* iHotel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 581FFF1A2B33156100435D88 /* Build configuration list for PBXNativeTarget "iHotel" */;
+			buildPhases = (
+				B11D2100B77CA127DE77BFC6 /* [CP] Check Pods Manifest.lock */,
+				581FFF082B33156000435D88 /* Sources */,
+				581FFF092B33156000435D88 /* Frameworks */,
+				581FFF0A2B33156000435D88 /* Resources */,
+				AF260CD63C2FE25D6D1675B3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iHotel;
+			productName = iHotel;
+			productReference = 581FFF0C2B33156000435D88 /* iHotel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		581FFF042B33156000435D88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					581FFF0B2B33156000435D88 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 581FFF072B33156000435D88 /* Build configuration list for PBXProject "iHotel" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 581FFF032B33156000435D88;
+			productRefGroup = 581FFF0D2B33156000435D88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				581FFF0B2B33156000435D88 /* iHotel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		581FFF0A2B33156000435D88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58855A422B39EFE500F2F1F9 /* SF-Pro-Display-Medium.ttf in Resources */,
+				58855A432B39EFE500F2F1F9 /* SF-Pro-Display-Semibold.ttf in Resources */,
+				581FFF172B33156100435D88 /* Preview Assets.xcassets in Resources */,
+				58855A442B39EFE500F2F1F9 /* SF-Pro-Display-Regular.ttf in Resources */,
+				581FFF142B33156100435D88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF260CD63C2FE25D6D1675B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iHotel/Pods-iHotel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iHotel/Pods-iHotel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iHotel/Pods-iHotel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11D2100B77CA127DE77BFC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iHotel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		581FFF082B33156000435D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58855A4E2B3A134700F2F1F9 /* UserGroupFieldsView.swift in Sources */,
+				5862E74C2B3443F50097FA58 /* RoomsView.swift in Sources */,
+				581FFF242B3347E000435D88 /* HotelModel.swift in Sources */,
+				58855A302B398A6700F2F1F9 /* HotelCommonInfoView.swift in Sources */,
+				5862E74A2B3443D90097FA58 /* HotelView.swift in Sources */,
+				581FFF122B33156000435D88 /* SuccessOrderView.swift in Sources */,
+				58855A502B3A138200F2F1F9 /* UserTextFieldView.swift in Sources */,
+				58855A542B3A13C600F2F1F9 /* UserDateFieldView.swift in Sources */,
+				5862E7502B3444C50097FA58 /* MainCoordinatorView.swift in Sources */,
+				58855A382B39B63200F2F1F9 /* HotelTagsView.swift in Sources */,
+				58855A482B3A123300F2F1F9 /* BookingMainDataView.swift in Sources */,
+				58855A562B3A13EC00F2F1F9 /* TotalPriceView.swift in Sources */,
+				5862E74E2B3444150097FA58 /* BookingView.swift in Sources */,
+				5862E7562B3465040097FA58 /* BookingViewModel.swift in Sources */,
+				581FFF222B333FF300435D88 /* MainCoordinator.swift in Sources */,
+				58855A522B3A13A000F2F1F9 /* UserDatePickerForTextFieldView.swift in Sources */,
+				58855A4A2B3A12A000F2F1F9 /* PhoneView.swift in Sources */,
+				58855A462B39F5E600F2F1F9 /* RoomTagsView.swift in Sources */,
+				58855A322B398BC400F2F1F9 /* HotelMoreInfoView.swift in Sources */,
+				581FFF102B33156000435D88 /* iHotelApp.swift in Sources */,
+				581FFF262B33491900435D88 /* RoomsModel.swift in Sources */,
+				581FFF282B3349F200435D88 /* BookingModel.swift in Sources */,
+				58855A4C2B3A12E900F2F1F9 /* EmailView.swift in Sources */,
+				581FFF2B2B3369EF00435D88 /* APIFetchHandler.swift in Sources */,
+				5862E7522B3464A80097FA58 /* HotelViewModel.swift in Sources */,
+				5862E7542B3464EB0097FA58 /* RoomsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		581FFF182B33156100435D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		581FFF192B33156100435D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		581FFF1B2B33156100435D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81AA1FFD51AD474678A6E721 /* Pods-iHotel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iHotel/Preview Content\"";
+				DEVELOPMENT_TEAM = 7H45D55DNR;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iHotel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rybin.Inc.iHotel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		581FFF1C2B33156100435D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E5C306997470D6A6C394C6 /* Pods-iHotel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iHotel/Preview Content\"";
+				DEVELOPMENT_TEAM = 7H45D55DNR;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iHotel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rybin.Inc.iHotel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		581FFF072B33156000435D88 /* Build configuration list for PBXProject "iHotel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581FFF182B33156100435D88 /* Debug */,
+				581FFF192B33156100435D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		581FFF1A2B33156100435D88 /* Build configuration list for PBXNativeTarget "iHotel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581FFF1B2B33156100435D88 /* Debug */,
+				581FFF1C2B33156100435D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 581FFF042B33156000435D88 /* Project object */;
+}
